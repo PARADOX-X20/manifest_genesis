@@ -14,7 +14,6 @@
            sync-j="4"
            revision="verve-qpr2" />
 
-  <!-- Remote for your fork -->
   <remote  name="paradox"
            fetch="https://github.com/PARADOX-X20/"
            sync-c="true"
