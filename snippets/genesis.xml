@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <manifest>
 
+  <!-- Remotes -->
   <remote  name="GenesisOS"
            fetch="https://github.com/GenesisOS"
            sync-c="true"
@@ -9,6 +10,13 @@
 
   <remote  name="GenesisOS-GitLab"
            fetch="https://gitlab.com/TheGenesisOS"
+           sync-c="true"
+           sync-j="4"
+           revision="verve-qpr2" />
+
+  <!-- Remote for your fork -->
+  <remote  name="paradox"
+           fetch="https://github.com/PARADOX-X20/"
            sync-c="true"
            sync-j="4"
            revision="verve-qpr2" />
@@ -73,7 +81,7 @@
 
   <!-- vendor -->
   <project path="vendor/certification" name="vendor_certification" remote="GenesisOS" />
-  <project path="vendor/genesis" name="vendor_genesis" remote="GenesisOS" />
+  <project path="vendor/genesis" name="vendor_genesis" remote="paradox" revision="verve-qpr2" />
   <project path="vendor/google/overlays/ThemeIcons" name="vendor_google_overlays_ThemeIcons" remote="GenesisOS" />
   <project path="vendor/gms" name="vendor_gms" remote="GenesisOS-GitLab" clone-depth="1" />
   <project path="vendor/support" name="vendor_support" remote="GenesisOS" />
